@@ -1,0 +1,226 @@
+[
+  {
+    "id": "ai-governance-chain-integrity",
+    "lane": "AI governance and agent readiness",
+    "track": "AI_GOVERNANCE",
+    "action": "LOCK_PATH",
+    "chainTheme": "AI approval packets move quickly, but the final decision chain still fractures too often between policy, security, and product.",
+    "boardQuestion": "Which AI lane needs a locked decision path before the board trusts another approval cycle?",
+    "owner": "Chief AI Officer",
+    "audience": "Board risk committee",
+    "chainHeadline": "AI decision-chain integrity is thinner than the current board packet implies.",
+    "chainSignal": "The final decision path breaks across policy, security, and product more often than the board packet acknowledges.",
+    "finalDecisionPath": "AI governance operations lead -> policy review -> security signoff -> board packet",
+    "requiredEvidence": [
+      "chain integrity log",
+      "approval path history",
+      "break repair record"
+    ],
+    "relatedSurfaces": [
+      "scorecard.kineticgain.com",
+      "memo.kineticgain.com",
+      "agents.kineticgain.com"
+    ],
+    "companyTags": [
+      "OpenAI",
+      "Anthropic",
+      "Microsoft"
+    ],
+    "decisionHandoffs": 4,
+    "chainBreaks": 2,
+    "escalationGaps": 2,
+    "chainCoverageScore": 58,
+    "decisionClarityScore": 61,
+    "boardConfidenceScore": 64,
+    "valueAtStakeMillions": 28,
+    "headline": "AI lanes need a locked decision path before the next board packet expands scope.",
+    "nextMove": "Lock one AI decision path and require break repair logging for any override."
+  },
+  {
+    "id": "identity-chain-stability",
+    "lane": "Identity and access governance",
+    "track": "IDENTITY",
+    "action": "REDUCE_BREAKS",
+    "chainTheme": "Identity exceptions close slowly because escalation gaps are not being written back into one stable decision chain.",
+    "boardQuestion": "Which identity lane needs fewer chain breaks before another exception cycle starts?",
+    "owner": "Chief Information Security Officer",
+    "audience": "Audit committee",
+    "chainHeadline": "Identity decision-chain integrity degrades faster than the board packet explains.",
+    "chainSignal": "Final calls are being made, but the decision path is incomplete after audit-driven escalations.",
+    "finalDecisionPath": "Identity governance director -> audit review -> security review -> exception packet",
+    "requiredEvidence": [
+      "chain integrity history",
+      "escalation-gap log",
+      "override break trail"
+    ],
+    "relatedSurfaces": [
+      "certs.kineticgain.com",
+      "guest.kineticgain.com",
+      "protect.kineticgain.com"
+    ],
+    "companyTags": [
+      "Microsoft",
+      "Entra",
+      "Okta"
+    ],
+    "decisionHandoffs": 4,
+    "chainBreaks": 2,
+    "escalationGaps": 2,
+    "chainCoverageScore": 55,
+    "decisionClarityScore": 54,
+    "boardConfidenceScore": 57,
+    "valueAtStakeMillions": 17,
+    "headline": "Identity needs a cleaner decision chain before the next audit packet lands.",
+    "nextMove": "Reduce chain breaks in identity before the next exception window opens."
+  },
+  {
+    "id": "revenue-chain-integrity",
+    "lane": "Revenue systems and reporting",
+    "track": "REVENUE_SYSTEMS",
+    "action": "RESTORE_CHAIN",
+    "chainTheme": "Revenue packets reopen because the handoff chain is recorded, but chain breaks are never repaired into one stable decision path.",
+    "boardQuestion": "Which reporting lane needs its decision chain restored before another forecast packet loops back to the board?",
+    "owner": "Chief Revenue Officer",
+    "audience": "Board finance committee",
+    "chainHeadline": "Revenue decision-chain breaks are staying open across repeated forecast cycles.",
+    "chainSignal": "The board packet shows who reviewed the decision, but not where the chain failed after the last reopen.",
+    "finalDecisionPath": "Revenue systems lead -> finance review -> commercial signoff -> board packet",
+    "requiredEvidence": [
+      "chain integrity report",
+      "forecast reopen chain",
+      "handoff break table"
+    ],
+    "relatedSurfaces": [
+      "powerbi.kineticgain.com",
+      "yield.kineticgain.com",
+      "martech.kineticgain.com"
+    ],
+    "companyTags": [
+      "Power BI",
+      "Tableau",
+      "VWO"
+    ],
+    "decisionHandoffs": 5,
+    "chainBreaks": 2,
+    "escalationGaps": 2,
+    "chainCoverageScore": 52,
+    "decisionClarityScore": 56,
+    "boardConfidenceScore": 53,
+    "valueAtStakeMillions": 25,
+    "headline": "Revenue packets need open chain breaks repaired before another cycle starts.",
+    "nextMove": "Restore the revenue decision chain across finance and commercial signoff before the next forecast review."
+  },
+  {
+    "id": "fintech-chain-fracture",
+    "lane": "FinTech diligence and transaction controls",
+    "track": "FINTECH",
+    "action": "TIGHTEN_HANDOFFS",
+    "chainTheme": "FinTech scope looks active, but the final decision chain is unstable because too many reviews fracture the route between decisions.",
+    "boardQuestion": "Which capital-sensitive lane needs a tighter decision chain before it can add more scope?",
+    "owner": "Chief Financial Officer",
+    "audience": "Investment committee",
+    "chainHeadline": "FinTech decision-chain integrity is now a scope-quality problem, not just a process problem.",
+    "chainSignal": "Merchant, treasury, and KYC reviews keep fracturing the final decision path without a stable chain.",
+    "finalDecisionPath": "Finance transformation lead -> treasury review -> compliance review -> committee packet",
+    "requiredEvidence": [
+      "decision-chain history",
+      "handoff fracture log",
+      "review gap map"
+    ],
+    "relatedSurfaces": [
+      "payments.kineticgain.com",
+      "merchant.kineticgain.com",
+      "treasury.kineticgain.com",
+      "kyc.kineticgain.com"
+    ],
+    "companyTags": [
+      "Stripe",
+      "Adyen",
+      "Plaid"
+    ],
+    "decisionHandoffs": 6,
+    "chainBreaks": 3,
+    "escalationGaps": 3,
+    "chainCoverageScore": 47,
+    "decisionClarityScore": 48,
+    "boardConfidenceScore": 49,
+    "valueAtStakeMillions": 33,
+    "headline": "FinTech decision-chain integrity is too unstable for another scope expansion.",
+    "nextMove": "Tighten the FinTech handoff chain and freeze ad hoc route changes until the path holds."
+  },
+  {
+    "id": "procurement-chain-reference",
+    "lane": "Procurement, trust, and buyer proof",
+    "track": "PROCUREMENT",
+    "action": "LOCK_PATH",
+    "chainTheme": "Procurement remains the cleanest decision-chain lane and can serve as the reference path for the rest of the estate.",
+    "boardQuestion": "Which lane already shows stable chain integrity and can be copied elsewhere?",
+    "owner": "Chief Commercial Officer",
+    "audience": "Board growth committee",
+    "chainHeadline": "Procurement already behaves like the chain-integrity reference model.",
+    "chainSignal": "Trust and commercial packets close with a consistent path and low chain drift.",
+    "finalDecisionPath": "Trust center owner -> security answers -> commercial approval -> buyer packet",
+    "requiredEvidence": [
+      "integrity score history",
+      "decision path log",
+      "packet closeout chain"
+    ],
+    "relatedSurfaces": [
+      "procurement.kineticgain.com",
+      "questionnaire.kineticgain.com",
+      "trust.kineticgain.com"
+    ],
+    "companyTags": [
+      "Vanta",
+      "Drata",
+      "Google"
+    ],
+    "decisionHandoffs": 2,
+    "chainBreaks": 0,
+    "escalationGaps": 0,
+    "chainCoverageScore": 88,
+    "decisionClarityScore": 85,
+    "boardConfidenceScore": 84,
+    "valueAtStakeMillions": 12,
+    "headline": "Procurement shows the chain-integrity pattern the rest of the estate should copy.",
+    "nextMove": "Reuse the procurement decision path in one constrained adjacent lane."
+  },
+  {
+    "id": "biotech-chain-integrity",
+    "lane": "Biotech and diagnostics control lanes",
+    "track": "BIOTECH",
+    "action": "LOCK_PATH",
+    "chainTheme": "Regulated control lanes still depend on one-off resets instead of a durable chain-integrity brief.",
+    "boardQuestion": "Which regulated lane needs a stronger decision chain before the board scales another control family?",
+    "owner": "Quality systems lead",
+    "audience": "Board compliance committee",
+    "chainHeadline": "Biotech needs stronger decision-chain integrity across regulated decisions.",
+    "chainSignal": "CAPA, specimen, and safety packets still show too many route shifts between reviews.",
+    "finalDecisionPath": "GxP program manager -> quality review -> compliance review -> control packet",
+    "requiredEvidence": [
+      "regulated chain history",
+      "route-shift log",
+      "review chain record"
+    ],
+    "relatedSurfaces": [
+      "assay.kineticgain.com",
+      "capa.kineticgain.com",
+      "specimen.kineticgain.com",
+      "safety.kineticgain.com"
+    ],
+    "companyTags": [
+      "LabVantage",
+      "Veeva",
+      "Thermo Fisher"
+    ],
+    "decisionHandoffs": 5,
+    "chainBreaks": 2,
+    "escalationGaps": 2,
+    "chainCoverageScore": 50,
+    "decisionClarityScore": 52,
+    "boardConfidenceScore": 55,
+    "valueAtStakeMillions": 26,
+    "headline": "Biotech needs a durable decision chain before more control-family expansion.",
+    "nextMove": "Lock the biotech decision path and review every route shift before the next expansion."
+  }
+]
