@@ -32,4 +32,12 @@ describe("render", () => {
   it("renders docs payload guidance", () => {
     expect(renderDocs()).toContain("/api/payload");
   });
+
+  it("renders product depth and portfolio wayfinding", () => {
+    const html = renderChainIntegrityOverview();
+    expect(html).toContain("Product depth");
+    expect(html).toContain("What these repos have in common");
+    expect(html).toContain("portfolio.kineticgain.com");
+    expect(html).toContain("board-decision-chain-integrity-brief");
+  });
 });

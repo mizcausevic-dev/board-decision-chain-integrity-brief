@@ -2,6 +2,7 @@ import { chainMap, integrityGaps, interventionPosture, payload, riskMap, summary
 
 const productTitle = "Board Decision Chain Integrity Brief";
 const domain = "https://integrity.kineticgain.com";
+const repoUrl = "https://github.com/mizcausevic-dev/board-decision-chain-integrity-brief";
 
 function escapeHtml(value: string) {
   return value
@@ -96,6 +97,19 @@ function shell(title: string, path: string, body: string, description: string) {
       .grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
       .card h3 { margin: 12px 0 10px; font-size: 30px; line-height: 1.05; }
       .card p, li { color: var(--muted); line-height: 1.6; }
+      .proof-band {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+      }
+      .proof-card {
+        min-height: 100%;
+        border: 1px solid rgba(103, 224, 190, 0.16);
+        background:
+          linear-gradient(135deg, rgba(103, 224, 190, 0.08), transparent 42%),
+          rgba(16, 32, 50, 0.72);
+      }
+      .proof-card h3 { font-size: 24px; }
       .table-wrap { overflow-x: auto; }
       table { width: 100%; border-collapse: collapse; }
       th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(125, 196, 255, 0.12); vertical-align: top; }
@@ -126,13 +140,64 @@ function shell(title: string, path: string, body: string, description: string) {
       <div class="footer">
         <span>${productTitle}</span>
         <a href="${domain}">${domain.replace("https://", "")}</a>
-        <a href="https://github.com/mizcausevic-dev/">GitHub</a>
+        <a href="${repoUrl}">GitHub repo</a>
+        <a href="https://portfolio.kineticgain.com/">Portfolio</a>
+        <a href="https://suite.kineticgain.com/">Suite</a>
         <a href="https://www.linkedin.com/in/mirzacausevic/">LinkedIn</a>
         <a href="https://kineticgain.com/">Kinetic Gain</a>
       </div>
     </div>
   </body>
 </html>`;
+}
+
+function productDepthSection() {
+  return `<section class="section">
+      <span class="eyebrow">Product depth</span>
+      <h2>Built as a decision-integrity product, not a generic dashboard.</h2>
+      <p class="lede">This surface helps executive teams see whether a strategic decision can survive the handoffs between executives, committees, operators, vendors, and evidence owners.</p>
+      <div class="proof-band">
+        <article class="card proof-card">
+          <div class="chip">Buyer value</div>
+          <h3>Where the board should intervene first.</h3>
+          <p>CEOs, CFOs, CROs, CISOs, and operating partners can see which decision chains are losing integrity before the next board cycle turns them into vague status updates.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">Technical proof</div>
+          <h3>Scores backed by reproducible outputs.</h3>
+          <p>The repo turns synthetic decision-chain records into scored lanes, integrity-gap tables, intervention posture, JSON payloads, static routes, tests, and screenshot-ready proof.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">GTM story</div>
+          <h3>Executive intelligence for decision quality.</h3>
+          <p>The positioning is practical: Kinetic Gain turns fractured governance, revenue, identity, and platform decisions into readable board packets with owner, evidence, and next move attached.</p>
+        </article>
+      </div>
+    </section>`;
+}
+
+function sharedPatternSection() {
+  return `<section class="section">
+      <span class="eyebrow">What these repos have in common</span>
+      <h2>One board question, one modeled dataset, one evidence packet.</h2>
+      <div class="proof-band">
+        <article class="card proof-card">
+          <div class="chip">Risk becomes legible</div>
+          <h3>Chain fragility stops hiding in process notes.</h3>
+          <p>Handoff drift, chain breaks, escalation gaps, evidence coverage, decision clarity, and board-confidence erosion become explicit operating signals.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">Ownership stays attached</div>
+          <h3>Every lane keeps a real audience and next move.</h3>
+          <p>Routes keep owner, committee, required evidence, and intervention posture visible so the product reads as a decision surface instead of a repo screenshot.</p>
+        </article>
+        <article class="card proof-card">
+          <div class="chip">Proof is reusable</div>
+          <h3>HTML, JSON, fixtures, and tests agree.</h3>
+          <p>The generated public surface, API payload, fixture data, smoke checks, and README assets describe the same board-ready chain-integrity packet.</p>
+        </article>
+      </div>
+    </section>`;
 }
 
 function navLinks(path: string) {
@@ -199,7 +264,9 @@ export function renderChainIntegrityOverview() {
     <section class="section">
       <h2>Board-visible chain exposures</h2>
       <ul>${risks}</ul>
-    </section>`,
+    </section>
+    ${productDepthSection()}
+    ${sharedPatternSection()}`,
     "Board-ready chain-integrity brief for stabilizing decision paths, repair coverage, and board-trustworthy follow-through."
   );
 }
@@ -345,7 +412,9 @@ export function renderDocs() {
         <li><code>/intervention-posture</code> scores handoffs, chain breaks, escalation gaps, coverage, clarity, and board-confidence strain.</li>
         <li><code>/api/payload</code> exposes the reproducible decision-chain packet.</li>
       </ul>
-    </section>`,
+    </section>
+    ${productDepthSection()}
+    ${sharedPatternSection()}`,
     "Product documentation for Board Decision Chain Integrity Brief and its board-ready routes."
   );
 }
